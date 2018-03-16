@@ -23,7 +23,8 @@ public static void main(String[] args)
 		final StringBuffer theOutput = new StringBuffer();
 		try
 		{
-			final Process aProcess = Runtime.getRuntime().exec("sh -c ls %s");
+			//final Process aProcess = Runtime.getRuntime().exec("sh -c ls %s");
+			final Process aProcess = Runtime.getRuntime().exec("sh", "scripts/myscript.sh");
 			//final Process aProcess = Runtime.getRuntime().exec("dir");
 			System.out.println("Called the script ");
 			aProcess.waitFor();
