@@ -5,11 +5,17 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Cron Job Execution Service</title>
+<title>Cron Job Execution Template</title>
 </head>
 <body>
 <%
-out.println(new ExecScript().runScript());
+String aScriptName = (request.getParameter("script")'
+if (aScriptName == null)
+{
+	out.println(new ExecScript().runScript("/scripts/myscript.sh")));
+}
+else
+	out.println(new ExecScript().runScript(aScriptName));
 %>
 
 </body>
