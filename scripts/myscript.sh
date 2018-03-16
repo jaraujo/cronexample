@@ -1,1 +1,1 @@
-echo "First Parameter = $1 > test.log
+echo "First Parameter = $1" > test.log

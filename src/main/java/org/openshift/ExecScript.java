@@ -18,7 +18,8 @@ public static void main(String[] args)
 	public static String runScript(String parms) 
 	{
 		System.out.println("Entering the runScript method");
-		String[] cmd = {"sh", "scripts/myScript.sh"};
+		//String[] cmd = {"sh", "scripts/myscript.sh"};
+		String[] cmd = {"sh", "-c ls"};
 			
 		final StringBuffer theOutput = new StringBuffer();
 		try
