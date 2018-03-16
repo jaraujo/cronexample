@@ -18,13 +18,13 @@ public static void main(String[] args)
 	public static String runScript(String parms) 
 	{
 		System.out.println("Entering the runScript method");
-		// String[] cmd = {"sh", "myScript.sh", "/Path/to/my/file"};
+		String[] cmd = {"sh", "scripts/myScript.sh"};
 			
 		final StringBuffer theOutput = new StringBuffer();
 		try
 		{
 			//final Process aProcess = Runtime.getRuntime().exec("sh -c ls %s");
-			final Process aProcess = Runtime.getRuntime().exec("sh", "scripts/myscript.sh");
+			final Process aProcess = Runtime.getRuntime().exec(cmd);
 			//final Process aProcess = Runtime.getRuntime().exec("dir");
 			System.out.println("Called the script ");
 			aProcess.waitFor();
