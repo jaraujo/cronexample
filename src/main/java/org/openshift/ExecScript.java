@@ -11,11 +11,11 @@ public class ExecScript
 public static void main(String[] args) 
 	{
 		//Call the runscript to test it works.
-		runScript(args);
+		runScript("/Path/to/my/file");
 	}
 	
 	//public String generateInsult() {
-	public static String runScript(String[] parms) 
+	public static String runScript(String parms) 
 	{
 		System.out.println("Entering the runScript method");
 		// String[] cmd = {"sh", "myScript.sh", "/Path/to/my/file"};
@@ -23,8 +23,8 @@ public static void main(String[] args)
 		final StringBuffer theOutput = new StringBuffer();
 		try
 		{
-			// final Process aProcess = Runtime.getRuntime().exec("sh -c ls %s");
-			final Process aProcess = Runtime.getRuntime().exec("dir");
+			final Process aProcess = Runtime.getRuntime().exec("sh -c ls %s");
+			//final Process aProcess = Runtime.getRuntime().exec("dir");
 			System.out.println("Called the script ");
 			aProcess.waitFor();
 			System.out.println("Returned from calling the script ");
