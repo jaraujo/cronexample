@@ -12,7 +12,7 @@
 String aScriptName = request.getParameter("script");
 if (aScriptName == null)
 {
-	out.println(new ExecScript().runScript("sh", "/scripts/myscript.sh")));
+	out.println(new ExecScript().runScript("sh", "/scripts/myscript.sh"));
 }
 else
 	out.println(new ExecScript().runScript(aScriptName));
