@@ -9,7 +9,7 @@
 </head>
 <body>
 <%
-String aScriptName = request.getParameter("script")'
+String aScriptName = request.getParameter("script");
 if (aScriptName == null)
 {
 	out.println(new ExecScript().runScript("/scripts/myscript.sh")));
