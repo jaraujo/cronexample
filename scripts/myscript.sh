@@ -1,1 +1,1 @@
-echo "Script call Successfully! > test.log
+echo "Script call Successfully!" > test.log
