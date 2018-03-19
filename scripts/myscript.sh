@@ -1,1 +1,1 @@
-echo "First Parameter = $1" > test.log
+echo "Script call Successfully! > test.log
